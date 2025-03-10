@@ -16,6 +16,7 @@ class ObjectRenderer:
         self.game = game                      # Referencia al objeto principal del juego
         self.screen = game.screen            # Referencia a la superficie donde se dibuja todo
         self.wall_textures = self.load_wall_textures()  
+        self.win_image = self.get_texture('resources/textures/win.png', RES)
         """
         Diccionario con las texturas de paredes. Cada llave (1, 2, 3, etc.) asocia 
         un número con la textura correspondiente en el mapa.
@@ -134,3 +135,10 @@ class ObjectRenderer:
             4: self.get_texture('resources/textures/4.png'),
             5: self.get_texture('resources/textures/5.png'),
         }
+    def show_victory_screen(self):
+        """
+        Muestra la pantalla de victoria en pantalla completa.
+        """
+        self.screen.fill((0, 0, 0))  # Fondo negro antes de mostrar la imagen
+        self.screen.blit(self.win_image, (0, 0))
+        pg.display.flip()  # Actualiza la pantalla para mos

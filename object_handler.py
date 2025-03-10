@@ -17,7 +17,7 @@ class ObjectHandler:
         add_npc = self.add_npc
 
         # Config para spawns
-        self.total_enemies = 20
+        self.total_enemies = 15
         self.spawned_enemies = 0
         self.max_alive = 5
         self.spawn_delay = 5
@@ -77,23 +77,25 @@ class ObjectHandler:
                 self.spawned_enemies += 1
                 self.last_spawn_time = current_time
 
+    
     def check_win(self):
         """
-        Verifica la condición de victoria:
-         - Se han spawneado todos los enemigos (total_enemies)
-         - Y no queda ningún NPC vivo.
+        Verifica si el jugador ha ganado:
+        - Todos los enemigos se han generado.
+        - No queda ningún enemigo vivo.
         """
         alive = any(npc.alive for npc in self.npc_list)
         if self.spawned_enemies == self.total_enemies and not alive:
             # Muestra la pantalla de victoria
-            self.game.object_renderer.win()
+            self.game.object_renderer.show_victory_screen()
             pg.display.flip()
-            pg.time.delay(1500)
-            # En lugar de new_game, paramos la partida y volvemos al menú
+            pg.time.delay(2000)  # Mostrar pantalla de victoria por 2 segundos
+
+            # Volver al menú principal
             self.game.playing = False
 
     def update(self):
-        """Actualiza el estado de todos los objetos."""
+        """Actualiza el estado de los objetos."""
         self.npc_positions = {npc.map_pos for npc in self.npc_list if npc.alive}
         [sprite.update() for sprite in self.sprite_list]
         [npc.update() for npc in self.npc_list]
