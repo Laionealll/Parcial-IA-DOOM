@@ -8,7 +8,7 @@
 🔹 **Incluye:**  
 ✅ Árbol de Comportamiento para la IA de los enemigos 🤖  
 ✅ Algoritmo A* para la navegación de los NPCs 🧐  
-✅ Soporte para control de Xbox 🎮  🏹  
+✅ Soporte para control de Xbox y Playstation🎮  🏹  
 ✅ Movimiento fluido en 3D con raycasting 🏃  
 ✅ Sonidos y sprites 🎧🎨  
 
