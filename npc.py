@@ -243,9 +243,11 @@ class NPC(AnimatedSprite):
                 self.check_health()
 
     def check_health(self):
-        if self.health < 1:
-            self.alive = False
-            self.game.sound.npc_death.play()
+       if self.health < 1 and self.alive:
+        self.alive = False
+        self.game.sound.npc_death.play()
+        # 🏆 SUMA PUNTOS:
+        self.game.player.score += 100
 
     @property
     def map_pos(self):

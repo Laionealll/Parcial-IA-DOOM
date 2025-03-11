@@ -30,7 +30,7 @@ PLAYER_POS = 1.5, 5
 PLAYER_ANGLE = 0
 
 # Velocidad del jugador al moverse hacia delante, atrás o en diagonal.
-PLAYER_SPEED = 0.004
+PLAYER_SPEED = 0.007
 
 # Velocidad de rotación del jugador al usar el teclado (si estuviese activo).
 PLAYER_ROT_SPEED = 0.002
@@ -39,7 +39,7 @@ PLAYER_ROT_SPEED = 0.002
 PLAYER_SIZE_SCALE = 60
 
 # Cantidad máxima de salud que puede tener el jugador.
-PLAYER_MAX_HEALTH = 200
+PLAYER_MAX_HEALTH = 2000
 
 # -------------------------------
 # Ajustes del ratón
