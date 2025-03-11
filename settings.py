@@ -30,7 +30,7 @@ PLAYER_POS = 1.5, 5
 PLAYER_ANGLE = 0
 
 # Velocidad del jugador al moverse hacia delante, atrás o en diagonal.
-PLAYER_SPEED = 0.007
+PLAYER_SPEED = 0.005
 
 # Velocidad de rotación del jugador al usar el teclado (si estuviese activo).
 PLAYER_ROT_SPEED = 0.002
