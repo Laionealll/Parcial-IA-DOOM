@@ -1,5 +1,6 @@
 # 🎮 Clon de DOOM 🎯
-
+# **Nombre:** Laioneall Isaac Rodriguez Williams 
+# **Matricula:** 23-EISN-2-035
 🎮 Este es un **shooter en primera persona** inspirado en el clásico DOOM, desarrollado en **Python y Pygame** como parte de un proyecto académico.
 
 ⚠️ **Atención:** Todo el código del proyecto, incluyendo la implementación del Árbol de Comportamiento y el Algoritmo A*, fue programado por mí desde cero. Utilicé videos como referencia para desarrollar la lógica del juego, pero toda la estructura y funcionalidad fueron implementadas manualmente.
