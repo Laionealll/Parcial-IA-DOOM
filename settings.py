@@ -39,7 +39,7 @@ PLAYER_ROT_SPEED = 0.002
 PLAYER_SIZE_SCALE = 60
 
 # Cantidad máxima de salud que puede tener el jugador.
-PLAYER_MAX_HEALTH = 2000
+PLAYER_MAX_HEALTH = 200
 
 # -------------------------------
 # Ajustes del ratón
